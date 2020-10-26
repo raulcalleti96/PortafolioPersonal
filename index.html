@@ -2,14 +2,21 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
         <title>Portafolio Raul Santiago</title>
     </head>
     <body>
-        <!--Header-->
-        <header class=" l-header">
-            <nav class=" nav bd-grid">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo">Raul Santiago Prieto</a>
                 </div>
@@ -17,77 +24,77 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#sobreMi" class="nav__link active">Sobre mí</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link active">Skills</a></li>
-                        <li class="nav__item"><a href="#proyectos" class="nav__link active">Proyectos y logros</a></li>
-                        <li class="nav__item"><a href="#Contacto" class="nav__link active">Contacto</a></li>        
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Proyectos y logros</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
                     </ul>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <em class='bx bx-home'></em>
+                    <em class='bx bx-menu'></em>
                 </div>
             </nav>
         </header>
 
         <main class="l-main">
-            <!--HOME-->
+            <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
-                <div class="home__dato">
-                    <h1 class="home__titulo">Hola,<br>Mi nombre es<span class="home__title-color">Raul</span><br>Software Developer</h1>
-                    
-                    <a href="#" class="boton">Contacto</a>
+                <div class="home__data">
+                    <h1 class="home__title">Hola,<br>Mi nombre es <span class="home__title-color">Raul</span><br> Software Developer</h1>
+
+                    <a href="#contact" class="button">Contacto</a>
                 </div>
+
                 <div class="home__social">
-                    <a href="#" class="home__social-icon"><em class="bx bxl-linkedin"></em></a>
-                    <a href="#" class="home__social-icon"><em class="bx bxl-facebook"></em></a>
-                    <a href="#" class="home__social-icon"><em class="bx bxl-github"></em></a>
+                    <a href="https://www.linkedin.com/in/raul-santiago-prieto/" class="home__social-icon"><em class='bx bxl-linkedin'></em></a>
+                    <a href="https://github.com/raulcalleti96" class="home__social-icon"><em class='bx bxl-github' ></em></a>
                 </div>
 
-                <div class="home_img">
-                    <img src="logo" alt="Logo">
+                <div class="home__img">    
+                    <img src="logo" alt="">
                 </div>
             </section>
 
-            <!--Sobre mi-->
-            <section class=" Seccion__sobremi" id="Sobremi">
-                <h2 class="seccion-titulo">Sobre mí</h2>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Sobre mi</h2>
 
-                <div class="sobremi_container bd-grid">
-                    <div class="sobremi__img">
-                        <img src="img/sobremi.jpg" alt="Sobre mi">
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="img/sobremi.jpg" alt="">
                     </div>
-
+                    
                     <div>
-                        <h2 class="sobremi__subtitulo">Raul Santiago Prieto</h2>
-                        <p class="sobremi__texto">Actualmente estudiando 2º curso de DAM donde llevo conmigo Java, HTML, CSS, SQL, Android y .NET. Además de Javacript, Angular, Spring y Python por cuenta propia. Me encanta este mundo, por eso me dedica parte de mi tiempo libro en aprender nuevos lenguajes y frameworks.</p>
-                    </div>
+                        <h2 class="about__subtitle">Raul Santiago Prieto</h2>
+                        <p class="about__text">Actualmente estudiando 2º curso de DAM donde llevo conmigo Java, HTML, CSS, SQL, Android y .NET. Además de Javacript, Angular, Spring y Python por cuenta propia. Me encanta este mundo, por eso me dedica parte de mi tiempo libro en aprender nuevos lenguajes y frameworks.</p>           
+                    </div>                                   
                 </div>
             </section>
 
-            <!--Skills-->
-            <section class="skills seccion" id="skills">
-                <h2 class="seccion-titulo">Skills</h2>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtittlo">Skills principales</h2>
-                        <p class="skills__texto">Aunque no tengo problema en usar varios lenguajes mi principal especialidad es orientado al backend.</p>
-                        <div class="skills__dato">
-                            <div class="skills__nombre">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__nombre">JAVA</span>
+                        <h2 class="skills__subtitle">Skills principales</h2>
+                        <p class="skills__text">unque no tengo problema en usar varios lenguajes mi principal especialidad es orientado al backend.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="iconify icon:logos:java icon-inline:false skills__icon"></span>
+                                <span class="skills__name">JAVA</span>
                             </div>
-                            <div class="skills__bar skills__java">
+                            <div class="skills__bar skills__html">
 
                             </div>
                             <div>
-                                <span class="skills__porcentaje">80%</span>
+                                <span class="skills__percentage">80%</span>
                             </div>
                         </div>
-                        <div class="skills__dato">
+                        <div class="skills__data">
                             <div class="skills__names">
-                                <i class='bx bxl-cas skills__icon'></i>
+                                <span class="iconify icon:logos:c-sharp icon-inline:false skills__icon"></span>
                                 <span class="skills__name">C#</span>
                             </div>
                             <div class="skills__bar skills__css">
@@ -98,11 +105,11 @@
                             </div>
                         </div>
                         <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-python skills__icon' ></i>
-                                <span class="skills__nombre">PYTHON</span>
+                            <div class="skills__names">                        
+                                <span class="iconify icon:vscode-icons:file-type-python icon-inline:false skills__icon" ></span>
+                                <span class="skills__name">PYHTON</span>
                             </div>
-                            <div class="skills__bar skills__pyhton">
+                            <div class="skills__bar skills__js">
                                 
                             </div>
                             <div>
@@ -111,10 +118,10 @@
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
-                                <i class='bx bxs-htmlcssjs skills__icon'></i>
-                                <span class="skills__nombre">HTML/CSS/JS</span>
+                                <span class="iconify icon:vscode-icons:file-type-html icon-inline:false skills__icon"></span>
+                                <span class="skills__name">HTML/CSS/JS</span>
                             </div>
-                            <div class="skills__bar skills__htmlcssjs">
+                            <div class="skills__bar skills__ux">
                                 
                             </div>
                             <div>
@@ -124,22 +131,22 @@
                     </div>
                     
                     <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <img src="img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
-            <!--===== Proyectos =====-->
-            <section class="seccion__proyectos" id="proyectos">
-                <h2 class="seccion-titulo">Proyectos y logros</h2>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Proyectos y logros</h2>
 
-                <!--imagenes provisionales a falta de logos-->
+                <!--Imagenes provisionales a falta de logos de los proyectos y logros-->
                 <div class="work__container bd-grid">
                     <div class="work__img">
                         <img src="img/work1.jpg" alt="">
                     </div>
                     <div class="work__img">
-                        <img src="img/work2.jpg" alt="">
+                        <img src="aimg/work2.jpg" alt="">
                     </div>
                     <div class="work__img">
                         <img src="img/work3.jpg" alt="">
@@ -156,16 +163,16 @@
                 </div>
             </section>
 
-            <!--===== Contacto =====-->
-            <section class="Seccion__Contacto" id="contacto">
-                <h2 class="seccion-titulo">Contacto</h2>
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contacto</h2>
 
-                <div class="contacto__container bd-grid">
-                    <form action="" class="contacto__form">
-                        <input type="text" placeholder="Name" class="contacto__input">
-                        <input type="mail" placeholder="Email" class="contacto__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contacto__input"></textarea>
-                        <input type="button" value="Enviar" class="contacto__button button">
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Nombre" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -173,11 +180,11 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__titulo">Raul Santiago Prieto</p>
+            <p class="footer__title">Raul Santiago Prieto</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.facebook.com/raulcalleti/" class="footer__icon"><em class='bx bxl-facebook' ></em></a>
+                <a href="https://www.instagram.com/raulcalleti_96/" class="footer__icon"><em class='bx bxl-instagram' ></em></a>
+                <a href="https://twitter.com/Raulcalleti" class="footer__icon"><em class='bx bxl-twitter' ></em></a>
             </div>
             <p>&#169; 2020 copyright all right reserved</p>
         </footer>
@@ -187,6 +194,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
