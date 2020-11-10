@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <style>
+         .contact {
+         background-image: url(./img/zamora.jpg);
+         background-size: cover;
+         background-position: top center;
+         position: relative;
+         background-attachment: fixed;
+         max-width:100%;
+         }
+         
+        </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -52,7 +63,9 @@
                 <div class="home__data">
                     <h1 class="home__title">Hola,<br>Mi nombre es <span class="home__title-color">Raul</span><br> Software Developer</h1>
 
-                    <a href="abrir cv" class="button">CV</a>
+                    <!--Editar CV en cada idioma-->
+                    <a href="https://firebasestorage.googleapis.com/v0/b/raulsantiago-f061a.appspot.com/o/CVRaulSantiago.pdf?alt=media&token=00868abd-908b-4c78-99a8-ee41eadf0ab2" class="button">CV</a>
+              
                 </div>
 
                 <div class="home__social">
@@ -152,35 +165,43 @@
                 <!--Imagenes provisionales a falta de logos de los proyectos y logros-->
                 <div class="work__container bd-grid">
                     <div class="work__img">
-                        <img src="img/work1.jpg" alt="">
+                        <img src="img/proyecto1.png" alt="">
+                        <div class="textinfo">
+                            <p id="inftxt"><b>SanBiblioteca</b> es un proyecto personal para un cliente cuyo objetivo
+                            es ordenar toda su bilbioteca privada. Además, permite crear y ver informes
+                            así como buscar libros para su compra</p>
+                            <a href="https://github.com/raulcalleti96/SanBiblioteca" target="blank"><h1 id="infpr">Abrir</h1></a>
+                        </div>
                     </div>
                     <div class="work__img">
-                        <img src="aimg/work2.jpg" alt="">
+                        <img src="img/proyecto2.png" alt="">
+                        <div class="textinfo">
+                            <p id="inftxt"><b>ProjectRadar</b> es el trabajo final del curso de 1ª de DAM, donde
+                            junto a mi compañero de proyecto, trabajamos para realizar nuestro primer proyecto en Java.
+                        </p>
+                        <a href="https://github.com/raulcalleti96/ProjectRadar"target="blank"><h1 id="infpr">Abrir</h1></a>
+                        </div>
                     </div>
                     <div class="work__img">
-                        <img src="img/work3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="img/work6.jpg" alt="">
+                        <img src="img/porta.jpg" alt="">
+                        <div class="textinfo">
+                            <p id="inftxt"><b>Portafolio</b> es mi primer trabajo FrontEnd. Este proyecto me ha permitido
+                            aprender nuevos lenguajes y funciones. Además de utilizar HTML5, CSS5, JS. Hago uso de Firebase.</p>
+                            <a href="https://github.com/raulcalleti96/PortafolioPersonal" target="blank"><h1 id="infpr">Abrir</h1></a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contacto</h2>
+                <h2 class="section-title"></h2>
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Nombre" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="name"      placeholder="Nombre" class="contact__input">
+                        <input type="mail"      placeholder="Email" class="contact__input">
+                        <textarea name="text"   placeholder="Mensaje..." id="" cols="0" rows="10" class="contact__input"></textarea>
                         <input type="button" value="Enviar" class="contact__button button">
                     </form>
                 </div>

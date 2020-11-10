@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="es">
     <head>
+        <style>
+            .contact {
+            background-image: url(./img/houston.jpg);
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+            background-attachment: fixed;
+            max-width:100%;
+            }
+            
+           </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,7 +22,7 @@
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 
-        <title>Portafolio Raul Santiago</title>
+        <title>Portfolio Raul Santiago</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -32,11 +43,11 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Hasiera</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Niri buruz</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Proiektuak eta lorpenak</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Kontaktu</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects and achievements</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -50,9 +61,11 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Kaixo,<br>Nire izena <span class="home__title-color">Raul</span> da <br> Software Developer</h1>
+                    <h1 class="home__title">Hi,<br>My name is <span class="home__title-color">Raul</span><br> Software Developer</h1>
 
-                    <a href="abrir cv" class="button">CV</a>
+                   <!--Editar CV en cada idioma-->
+                   <a href="https://firebasestorage.googleapis.com/v0/b/raulsantiago-f061a.appspot.com/o/CVRaulSantiago.pdf?alt=media&token=00868abd-908b-4c78-99a8-ee41eadf0ab2" class="button">CV</a>
+              
                 </div>
 
                 <div class="home__social">
@@ -67,7 +80,7 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">Niri buruz</h2>
+                <h2 class="section-title">Sobre mi</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
@@ -76,7 +89,7 @@
                     
                     <div>
                         <h2 class="about__subtitle">Raul Santiago Prieto</h2>
-                        <p class="about__text">Momentuz 2. ikastaroa DAM ikasten ari naiz, Java, HTML, CSS, SQL, Android eta .NET daramatzat nirekin. Baita Javacript, Angular, Spring eta Python berez. Mundu hau maite dut, beraz, liburuan denbora eta zati bat hizkuntza eta esparru berriak ikasten ematen dut.</p>           
+                        <p class="about__text">Currently studying 2nd year of DAM where I carry with me Java, HTML, CSS, SQL, Android and .NET. As well as Javacript, Angular, Spring and Python on its own. I love this world, that's why I dedicate part of my free time to learning new languages and frameworks.</p>           
                     </div>                                   
                 </div>
             </section>
@@ -87,8 +100,8 @@
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Skills principales</h2>
-                        <p class="skills__text">Hainbat hizkuntza erabiltzeko arazorik ez dudan arren, nire espezialitate nagusia backend-era bideratuta dago.</p>
+                        <h2 class="skills__subtitle">Skills</h2>
+                        <p class="skills__text">Although I have no problem using various languages, my main specialty is backend oriented.</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <span class="iconify icon:logos:java icon-inline:false skills__icon"></span>
@@ -147,7 +160,7 @@
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Proiektuak eta lorpenak</h2>
+                <h2 class="section-title">Projects and achievements</h2>
 
                 <!--Imagenes provisionales a falta de logos de los proyectos y logros-->
                 <div class="work__container bd-grid">
@@ -174,14 +187,14 @@
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Kontaktu</h2>
+                <h2 class="section-title"></h2>
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Izena" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Bidali" class="contact__button button">
+                        <input type="name"      placeholder="Name" class="contact__input">
+                        <input type="mail"      placeholder="Email" class="contact__input">
+                        <textarea name="text"   placeholder="Message.."id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
                     </form>
                 </div>
             </section>
