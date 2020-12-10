@@ -1,6 +1,6 @@
 window.onload=function() {
 
-    setTimeout('change()',4900);
+    setTimeout('change()',2000);
 }
 function change()
 {
